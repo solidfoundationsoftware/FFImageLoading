@@ -335,5 +335,10 @@ namespace FFImageLoading.Cache
                 await Task.Delay(20).ConfigureAwait(false);
             }
         }
-    }
+
+		public Task AddToSavingQueueIfNotExistsAsync(string key, byte[] bytes, TimeSpan duration, string uri = null, Action<FileWriteInfo> writeFinishedAction = null)
+		{
+			throw new NotImplementedException();
+		}
+	}
 }
